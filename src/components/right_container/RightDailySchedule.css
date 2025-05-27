@@ -1,0 +1,52 @@
+.daily-schedule-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: monospace;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 450px;
+  overflow: auto;
+}
+
+.daily-schedule-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.schedule-rows {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.schedule-row {
+  display: flex;
+  align-items: stretch; 
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.schedule-time {
+  min-width: 55px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.schedule-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: monospace;
+  background: transparent;
+  border-left: 1px solid #ccc;
+  margin-left: 12px;
+  padding: 0 0 0 12px;
+  align-self: stretch; 
+}

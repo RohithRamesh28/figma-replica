@@ -1,0 +1,22 @@
+.weekday-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: white;
+  font-family: monospace;
+  align-items: center;
+  margin-right: 123px;
+}
+
+.weekday-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weekday-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 14px;
+}

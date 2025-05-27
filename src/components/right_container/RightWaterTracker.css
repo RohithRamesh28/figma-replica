@@ -1,0 +1,27 @@
+.water-tracker-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: monospace;
+  background-color: white;
+  padding: 12px;
+  border-radius: 12px;
+   justify-content: space-around ;
+
+}
+
+.water-label {
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+.drop-svg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 20;
+  transition: transform 0.2s;
+   justify-content: space-evenly ;
+ 
+}

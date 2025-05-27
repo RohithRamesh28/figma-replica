@@ -1,0 +1,29 @@
+/* RightSmiley.css */
+.smiley-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  font-family: monospace;
+  margin-right: 100px;
+}
+
+.smiley-option input {
+  display: none;
+}
+
+.svg-emoji {
+  
+  width: 28px;
+  height: 28px;
+
+}
+
+.smiley-option.active .svg-emoji {
+  opacity: 1;
+  border: 2px solid #5a73ec;
+  background-color: #c9d5ff ;
+  border-radius: 50%;
+  padding: 4px;
+}

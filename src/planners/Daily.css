@@ -1,0 +1,152 @@
+
+.date-right >* {
+  grid-area: date-right;
+  font-weight: bold;
+  padding: 12px;
+  background-color: #8fa4f0;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-right: 280px ;
+
+}
+
+.RightWeekdaysCheckBox {
+  grid-area: RightWeekdaysCheckBox;
+}
+
+.right-daily-schedule {
+  grid-area: right-daily-schedule;
+  font-size: 13px;
+  max-height: 400px;
+  width: 100%;
+  max-height: none;
+}
+
+.smiley {
+  grid-area: smiley;
+}
+
+.water-tracker {
+  grid-area: water-tracker;
+}
+
+.most-important {
+  grid-area: most-important;
+}
+
+.Todos {
+  grid-area: Todos;
+}
+
+.note-right {
+  grid-area: note-right;
+}
+
+
+.right-grid {
+  display: grid;
+  grid-template-areas:
+    "date-right date-right "
+    "RightWeekdaysCheckBox none "
+    "right-daily-schedule  smiley"
+    "right-daily-schedule  water-tracker"
+    "right-daily-schedule most-important"
+    "right-daily-schedule  Todos"
+    "note-right Todos ";
+  grid-template-columns: 2fr 1.5fr ;
+
+
+  padding: 16px;
+  background-color: #c9d5ff;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 1080px;
+  box-sizing: border-box;
+}
+
+
+.right-grid > * {
+
+  padding: 12px;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 13px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.right-container {
+  min-height: 100vh;
+  background-color: #f4f6fa;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 900px) {
+  .right-grid {
+    grid-template-areas:
+      "date-right"
+      "RightWeekdaysCheckBox"
+      "smiley"
+      "right-daily-schedule"
+      "water-tracker"
+      "most-important"
+      "Todos"
+      "note-right";
+    grid-template-columns: 1fr;
+  }
+
+  .right-daily-schedule {
+    max-height: 300px;
+  }
+
+  .right-grid > * {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.right-important .checkbox-list {
+  max-height: 100px; 
+  overflow-y: auto;
+  padding-right: 4px; 
+}
+
+.right-important {
+  max-height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-todos {
+  max-height: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-todos .checkbox-list {
+  max-height: 100px; 
+  overflow-y: auto;
+  padding-right: 4px;
+}
