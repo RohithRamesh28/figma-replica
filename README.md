@@ -11,4 +11,4 @@ A lightweight replica of the Figma UI built using **React**. This project is foc
 - 🎨 Sidebar, Topbar, Canvas, and Layers panel
 - 🔧 Dynamic resizing and layout behavior
 - 💾 Clean folder structure for scalability
-- 
+  
